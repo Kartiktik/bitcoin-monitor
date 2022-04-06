@@ -2,6 +2,5 @@ python-dotenv
 pycoingecko
 flask
 flask_apscheduler
-sqlite3
 
 
