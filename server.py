@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 from flask_apscheduler import APScheduler
-from sql_table import connect_to_db
+from sql_table import create_db_table,connect_to_db
 import sqlite3
 from price_getter import insert_btc
 app = Flask(__name__)
@@ -62,6 +62,7 @@ def api_get_users():
 
 
 if __name__ == "__main__":
+    create_db_table()
     scheduler.add_job(id='Scheduled Task', func=schedule, trigger="interval", seconds=30)
     scheduler.start()
     app.run(host='localhost',port=5000)
