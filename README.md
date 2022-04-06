@@ -1,3 +1,4 @@
+
 # bitcoin-monitor
 Update the .env file 
 Run the docker-compose.yml using the cmd docker-compose up.
@@ -29,3 +30,5 @@ The response should be similar to
 When the btc value exceeds or reduces against the threshold given in the .env You should be recieving a mail in the mail id specified in the .env file
 Now the Currency is defaulted to "BTC" and date format is defaulted to "DD-MM-YYY".
 Please adhere to that in your API calls.
+
+<img width="960" alt="Capture" src="https://user-images.githubusercontent.com/30043128/162009632-f555c202-7eb2-4719-bdca-6552d3d4323f.PNG">
